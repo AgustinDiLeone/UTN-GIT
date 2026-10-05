@@ -1,4 +1,15 @@
-def sumar(a, b):
+def sumar(a:int|float , b:int|float ) -> int|float:
+    """
+    suma dos numeros
+
+    arg:
+    a(int): primer numero a sumar
+    b(int): segundo numero a sumar
+
+    returns:
+    int: la suma de a y b
+
+    """
     return a + b
 
 def restar(a, b):
