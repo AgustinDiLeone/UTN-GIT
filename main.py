@@ -1,0 +1,30 @@
+def sumar(a, b):
+    return a + b
+
+def restar(a, b):
+    return a - b
+
+def calcular(opcion, numero1, numero2):
+    if opcion == 1:
+        return sumar(numero1, numero2)
+
+    elif opcion == 2:
+        return restar(numero1, numero2)
+
+    else:
+        return "Opción inválida"
+
+
+print("=== CALCULADORA ===")
+print("1. Sumar")
+print("2. Restar")
+
+
+opcion = int(input("Seleccione una opción: "))
+
+numero1 = float(input("Ingrese el primer número: "))
+numero2 = float(input("Ingrese el segundo número: "))
+
+resultado = calcular(opcion, numero1, numero2)
+
+print("Resultado:", resultado)
